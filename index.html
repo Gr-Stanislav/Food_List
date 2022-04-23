@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </head>
 <body>
     <header class="header">
         <div class="header__left-block">
-            <div class="header__logo">
+            <div class="header__logo animate__animated animate__fadeInDown">
                 <img src="icons/logo.svg" alt="Логотип">
             </div>
             <nav class="header__links">
@@ -21,7 +24,7 @@
             <button class="btn btn_white">Связаться с нами</button>
         </div>
     </header>
-    <div class="sidepanel">
+    <div class="sidepanel animate__animated animate__fadeInUp">
         <div class="sidepanel__text"><span>Социальные сети</span></div>
         <div class="sidepanel__divider"></div>
         <a href="#" class="sidepanel__icon">
@@ -79,7 +82,7 @@
     <div class="offer">
         <div class="bgc_y"></div>
         <div class="container">
-            <div class="offer__text">
+            <div class="offer__text wow animate__animated animate__fadeInLeft">
                 <h2 class="title">Что мы можем вам предложить?</h2>
                 <div class="offer__descr">
                     Наша основная идея - это правильное питание. Оно может быть простым и вкусным. Мы не просто доставка, мы сервис! Мы взяли на себя все расчеты БЖУ, калорийности, объемов порций и прочие важные, но скучные аспекты. Вам остается только полезная, сытная и правильная еда, которую мы привозим прямо под дверь.
@@ -89,7 +92,7 @@
                 <button class="btn btn_dark">Связаться с нами</button>
             </div>
         </div>
-        <div class="container">
+        <div class="container wow animate__animated animate__fadeInRight">
             <div class="offer__advantages">
                 <h2>Быстро и полезно</h2>
                 <div class="offer__advantages-text">
@@ -133,7 +136,7 @@
     <div class="divider"></div>
 
     <div class="calculating">
-        <div class="container">
+        <div data-wow-delay="0.5s" class="container wow animate__animated animate__fadeInUp">
             <h2 class="title">Рассчитаем вашу потребность в калориях?
             </h2>
             <div class="calculating__field">
