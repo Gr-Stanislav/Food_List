@@ -116,6 +116,33 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
+    // Add Modal window
+
+    let btn = document.querySelectorAll('.btn'),
+        modalClose = document.querySelector('.modal__close'),
+        windowModal = document.querySelector('.modal');
+
+
+    btn.forEach(item => {
+        item.addEventListener('click', () => {
+            windowModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    function modalClosed () {
+        windowModal.style.display = 'none';
+        document.body.style.overflow = '';
+    };
+
+    modalClose.addEventListener('click', modalClosed);
+    windowModal.addEventListener('click', modalClosed);
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" || e.code === "ArrowUp") {
+            modalClosed ();
+        };
+    });
+
 
 
 
@@ -130,7 +157,7 @@ window.addEventListener('DOMContentLoaded', function() {
             this.descr = descr;
             this.price = price;
             this.parent = document.querySelector(parentSelector);
-            this.transfer = 27;
+            this.transfer = 30;
             this.changeToUAH();
         }
 
@@ -141,7 +168,7 @@ window.addEventListener('DOMContentLoaded', function() {
         render() {
             const element = document.createElement('div');
             element.innerHTML = `
-                <div class="menu__item">
+                <div data-wow-delay="0.5s" class="menu__item wow animate__animated animate__zoomInUp">
                     <img src=${this.src} alt=${this.alt}>
                     <h3 class="menu__item-subtitle">${this.title}</h3>
                     <div class="menu__item-descr">${this.descr}</div>
