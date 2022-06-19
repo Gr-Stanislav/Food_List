@@ -1,12 +1,13 @@
+import windModal from './modules/windModal';
+import timer from './modules/timer';
+import tabs from './modules/tabs';
+import slider from './modules/slider';
+import forms from './modules/forms';
+import card from './modules/card';
+import calc from './modules/calc';
+
+
 window.addEventListener('DOMContentLoaded', function() {
-   
-    const windModal = require('./modules/windModal'),
-          timer = require('./modules/timer'),
-          tabs = require('./modules/tabs'),
-          slider = require('./modules/slider'),
-          forms = require('./modules/forms'),
-          card = require('./modules/card'),
-          calc = require('./modules/calc');
 
           windModal();
           timer();

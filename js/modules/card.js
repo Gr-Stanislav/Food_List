@@ -9,7 +9,7 @@ function card() {
                 this.descr = descr;
                 this.price = price;
                 this.parent = document.querySelector(parentSelector);
-                this.transfer = 30;
+                this.transfer = 36;
                 this.changeToUAH();
             }
     
@@ -57,4 +57,4 @@ function card() {
             });
 }
 
-module.exports = card;
+export default card;

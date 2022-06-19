@@ -35,4 +35,4 @@ function modal(){
         },5000);
 }
 
-module.exports = modal;
+export default modal;
